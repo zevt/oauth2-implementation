@@ -1,0 +1,84 @@
+/*div {*/
+    /*border: 1px solid black;*/
+/*}*/
+
+div.container-fluid {
+    margin: 5% calc(30% - 80px) 0 calc(30% - 80px);
+    /*border: 1px solid black;*/
+}
+div.row {
+    margin-top: 5%;
+}
+div{
+    padding: 0px;
+    margin: 0;
+
+}
+a {
+    text-decoration: none;
+}
+
+span.fa-stack {
+    border: 1px solid lightgray;
+    /*margin: 1em;*/
+    margin: 15px;
+    border-radius: 15px;
+    /*background-color: transparent;*/
+    box-shadow: 1px 1px 2px 1px lightgray;
+    background-color: #fdfdf8;
+    font-size: 50px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+
+}
+
+span.fa-stack:hover {
+    box-shadow: 1px 1px 5px 2px lightgray;
+    background-color: #ffffff;
+    margin: 10px;
+    font-size: 55px;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+/*.fa-stack {*/
+    /*font-size: 50px;*/
+/*}*/
+
+.text-title {
+    font-size: 13px;
+}
+
+span.text-title {
+    margin-top: -15px;
+    padding-bottom: -25px;
+}
+
+.fa-eye {
+    color: #4A89DC;
+}
+
+.fa-eye:hover {
+    color: #59DECE;
+}
+
+.fa-circle {
+    color: transparent;
+    /*background: transparent;*/
+}
+
+div.wrapper {
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 500px) {
+    .fa-stack {
+        font-size: 35px!important;
+    }
+}

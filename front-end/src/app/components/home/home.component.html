@@ -1,0 +1,52 @@
+<div class="container-fluid">
+    <div [hidden]="auth" class="row" [ngStyle]="auth ? {'display' : 'none' } : '' ">
+        <md-card>
+            <md-card-title>
+                <h4 class="text-center title">Java Developers of Dallas is for</h4>
+            </md-card-title>
+            <hr>
+            <md-card-content>
+                <ul>
+                    <li>Learning.</li>
+                    <li>Networking or just simply making friends.</li>
+                    <li>Contributing to Dev Community </li>
+                    <li>Get Free food :))</li>
+                </ul>
+            </md-card-content>
+        </md-card>
+
+        <md-card>
+            <md-card-title class="text-center">
+                <h4 class="text-center title">We're not here for</h4>
+            </md-card-title>
+            <hr>
+            <md-card-content>
+                <ul>
+                    <li>Dating (go to Tinder).</li>
+                    <li>Selling (go to eBay).</li>
+                    <li>And (*&%$*&($(*$)@/@$-*@$*@%%.</li>
+                </ul>
+            </md-card-content>
+        </md-card>
+
+        <div class="text-center">
+            <button md-raised-button (click)="navigateToLogin()">Sign Up Now or Never</button>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    <div [hidden]="!auth" class="row" [ngStyle]="auth ? {'display' : 'block'} : '' ">
+        <md-card id="top-panel1" class="panel">
+            <md-card-title>
+                <h4 class="text-center">Hi {{auth?.user?.name}}</h4>
+            </md-card-title>
+            <md-card-content>
+                <ul>
+                    <li><a [routerLink]="['secret']">Click here to go to Secret Area </a></li>
+                    <!--<li><a [routerLink]="['task']">Click here to </a></li>-->
+                </ul>
+            </md-card-content>
+        </md-card>
+    </div>
+</div>

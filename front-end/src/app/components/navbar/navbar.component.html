@@ -1,0 +1,53 @@
+<nav class="navbar" (click)="update()">
+
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li [routerLinkActive]="['']">
+                <a [routerLink]="['']" routerLinkActive="active"
+                   [routerLinkActiveOptions]="{exact: true}">
+                    <span class="fa-stack fa-1x">
+                        <i class="fa fa-circle fa-stack-1x" aria-hidden="true"></i>
+                        <i class="fa fa-home fa-stack-1x" aria-hidden="true"></i>
+                    </span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li >
+                <a [routerLink]="['secret']">
+                     <span class="fa-stack fa-1x">
+                            <i class="fa fa-circle fa-stack-1x" aria-hidden="true"></i>
+                            <i class="fa fa-tasks fa-stack-1x" aria-hidden="true"></i>
+                     </span>
+                    <span>JDD Secret</span>
+                </a>
+            </li>
+
+
+        </ul>
+
+        <ul class="nav navbar-right right">
+
+            <li class="dropdown right">
+                <a href="#" class="icon-me" data-toggle="dropdown" role="button"
+                   aria-haspopup="true" aria-expanded="false">
+                    <span> <i class="fa fa-user fa-1x" aria-hidden="true"></i> </span>
+                    <span>Me<span class="caret"></span></span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-me ">
+                    <li class="avatar-me">
+                        <a href="#"><span class="avatar"><i class="fa fa-user" aria-hidden="true"></i></span>
+                            <span class="name"><h3>{{user?.name}}</h3> <span>View profile</span></span></a>
+                    </li>
+
+                    <li [hidden]="user == null"><a class="sign-out" (click)="signOut()">Sign Out</a></li>
+                    <li [hidden]="user!= null"><a class="sign-out" (click)="signIn()">Sign In</a></li>
+
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+

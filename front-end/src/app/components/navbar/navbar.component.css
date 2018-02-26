@@ -1,0 +1,303 @@
+
+.navbar {
+    /*background-color: #283e4a;*/
+    /*background-color: #22353d;*/
+    background-color: #B02623;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.navbar-nav, .navbar-right {
+    height: 55px !important;
+}
+
+ul.navbar-nav > li > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 0 0 0;
+    color: #c7d1d8;
+    font-weight: 400;
+}
+
+.navbar-nav > .right {
+    float: right !important;
+}
+
+.navbar-nav {
+    width: calc(100% / 1.5);
+    /*border: solid yellowgreen 1px;*/
+    margin-right: 0 !important;
+}
+
+@media (max-width: 800px) {
+    .navbar-nav {
+        width: calc(100% / 1.3);
+    }
+}
+
+.navbar .navbar-nav > li, .navbar-right > li {
+    width: calc(100% / 5);
+    min-width: 50px;
+}
+
+@media (max-width: 550px) {
+    .navbar .navbar-nav > li, .navbar-right > li {
+        width: calc(100% / 4);
+        min-width: 50px;
+    }
+}
+
+.navbar-right {
+    width: calc(100% / 10);
+    min-width: 60px;
+    /*border: solid yellowgreen 1px;*/
+    margin: 0;
+    padding: 0 !important;
+}
+
+@media (max-width: 767px) {
+    .navbar-right {
+        margin: 0px 0px 0px 0px;
+    }
+    .navbar {
+        height: 55px !important;
+    }
+    .navbar-nav>li>a {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+}
+
+a.icon-me {
+    display: flex;
+    flex-direction: column !important;
+    margin: 0 !important;
+    padding: 5px 0 !important;
+}
+
+a.icon-me > span {
+    padding: 2px;
+    margin-left: 10px;
+}
+
+
+
+.navbar-right > li {
+    width: calc(100% / 8);
+    min-width: 50px;
+}
+
+.fa-circle {
+    /*color: #283e4a;*/
+    color: transparent;
+}
+
+.fa-stack-1x {
+    font-size: 23px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a:active {
+    color: #fff;
+    background: transparent;
+    transition-duration: 167ms;
+}
+
+/*.nav > li > a:hover > i, .nav > li > a:focus > i {*/
+    /*color: #fff;*/
+    /*transition-duration: 167ms;*/
+/*}*/
+
+
+.nav > li >a.icon-me:hover,  .nav > li > a.icon-me:focus {
+    color: #fff !important;
+}
+
+li > a.icon-me > span > i.fa-user {
+    background-color: #b3b6b9;
+    /*color: #c7d1d8;*/
+    text-align: center;
+    padding-top: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    border: 1px solid #c7d1d8;
+    font-size: 10px;
+}
+
+li > a.icon-me{
+    font-size: 13px;
+    color: #c7d1d8;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background: transparent;
+}
+
+/*********************************   Drop down Menu part ********************************/
+
+.dropdown-menu {
+    left: auto;
+    right: -18px;
+}
+
+.dropdown-me {
+    top: calc(100% + 4px);
+    width: 288px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.dropdown-me h5, .dropdown-me h3, .dropdown-me a {
+    color: #44474a;
+}
+
+ul.dropdown-menu > li > a {
+    text-align: center !important;
+}
+
+.dropdown-me::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    border: 10px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, .15);
+}
+
+.dropdown-me::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -19px;
+    right: 20px;
+    border: 10px solid transparent;
+    border-bottom-color: #fff;
+}
+
+.dropdown-me > li > a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+.dropdown-me > a > span {
+    display: inline-block;
+}
+
+.dropdown-me .avatar {
+    padding: 16px 12px 16px 24px;
+}
+
+.dropdown-me .avatar .fa-user {
+    background-color: #b3b6b9;
+    text-align: center;
+    padding-top: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .15);
+}
+
+.dropdown-me .avatar .fa-user::before {
+    color: #c7d1d8;
+    font-size: 40px;
+}
+
+.avatar-me .name h3 {
+    line-height: 24px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+/***/
+.avatar-me .name span {
+    color: #0084bf;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+}
+
+.dropdown-me .avatar-me a:hover {
+    background-color: transparent;
+}
+
+.dropdown-me > li {
+    padding: 0;
+    list-style-type: none;
+}
+
+.dropdown-me .title {
+    text-transform: uppercase;
+    background: #f3f6f8;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 0 12px;
+    font-weight: 600;
+    border-top: 1px solid rgba(0, 0, 0, .15);
+    margin: 0;
+}
+
+a.dropdown-menu-item {
+    padding: 5px 24px !important;
+    line-height: 20px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, .7);
+}
+
+a.dropdown-menu-item:hover {
+    background-color: rgba(0, 0, 0, .1);
+    color: #000;
+    text-decoration: none;
+}
+
+.sign-out {
+    padding: 5px 24px !important;
+    border-top: 1px solid rgba(0, 0, 0, .15);
+}
+
+.sign-out:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+.dropdown-me .sign-out a {
+    color: rgba(0, 0, 0, .7);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+.dropdown-me .sign-out a:hover {
+    color: #000;
+    background-color: transparent;
+}
+
+/****************************************   Stop navbar from collapsing  ***************************************/
+.navbar-collapse.collapse {
+    display: block !important;
+}
+
+.navbar-nav > li, .navbar-nav {
+    float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: -15px !important;
+}
+
+.navbar-right {
+    float: right !important;
+}
+
+
+
+
+
+

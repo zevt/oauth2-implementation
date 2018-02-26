@@ -1,0 +1,23 @@
+em.notice {
+    float: right;
+    color: crimson;
+}
+
+.notice input {
+    background-color: #e7c3c3;
+}
+
+.notice::-webkit-input-placeholder {
+    color: #999999;
+}
+
+.notice::-moz-placeholder {
+    color: #999999;
+}
+
+.notice:-moz-placeholder {
+    color: #999999;
+}
+.notice:-ms-input-placeholder {
+    color: #999999;
+}
