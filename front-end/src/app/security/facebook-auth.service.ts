@@ -23,7 +23,7 @@ export class FacebookAuthService implements AuthProvider, OnInit {
                 private router: Router,
                 private http: Http) {
         facebook.init({
-            appId: '2051574104858144',
+            appId: 'secretsecretsecretsecret',
             xfbml: true,
             status: true,
             cookie: true,

@@ -24,7 +24,7 @@ export class GoogleOauth2Service implements OnInit, AuthProvider {
         redirect = redirect.trim();
         gapi.load('auth2', function () {
             GoogleOauth2Service.GOOGLEAUTH = gapi.auth2.init({
-                client_id: '431219984888-kd5mrgob30sjc3daldfee3q6hdpv9u7c.apps.googleusercontent.com',
+                client_id: 'secretsecretsecretsecret',
                 // fetch_basic_profile: true,
                 scope: 'openid profile email',
                 ux_mode: 'popup',
